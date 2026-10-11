@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Validate fixed-format item CSVs, preview changes and import ScriptableObjects with transaction backups and recovery tools.">
+  <meta name="theme-color" content="#0b1424">
+  <title>RPG Data Guard — MapleMaketh</title>
+  <link rel="icon" href="assets/brand.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap header"><a class="brand" href="index.html"><img src="assets/brand.svg" width="38" height="38" alt=""><span>MapleMaketh<small>PRACTICAL UNITY TOOLS</small></span></a><nav aria-label="Main navigation"><a href="rpg-data-guard.html" aria-current="page">Product</a><a href="quick-start.html">Quick start</a><a href="support.html">Support</a><a href="changelog.html">Changelog</a></nav></header>
+<main id="main" class="wrap">
+<div class="doc"><p class="eyebrow">THE TOOLBOX / RPG DATA GUARD</p><h1>Check the data.<br><em>Review the change.</em></h1><p class="lead">Fixed-format item CSV validation and ScriptableObject imports for the Unity Editor.</p><span class="status">Release candidate · In preparation</span><div class="actions"><a class="button" href="quick-start.html">Start with the sample →</a><a href="support.html">Contact support</a></div>
+<figure class="full-shot"><a href="assets/screenshot-preview.png"><img src="assets/screenshot-preview.png" width="1920" height="1032" alt="RPG Data Guard displaying the sample potion and sword items with Added status, field values, and Validate and preview and Apply with backup buttons"></a><figcaption>Actual product UI in Unity 6000.0.84f1. Select the image to view it at full size.</figcaption></figure>
+<section><h2>What it does</h2><ul class="feature-list"><li><strong>Validate seven-column item CSVs.</strong> Check IDs, types, numeric values and upgrade references before applying changes.</li><li><strong>See the difference.</strong> Inspect Added, Modified, Unchanged, Missing and Conflict entries, including field differences.</li><li><strong>Preserve existing references.</strong> Apply imports while preserving managed asset GUIDs and local file IDs. Missing CSV rows retain their assets; the generated catalog includes current rows only.</li><li><strong>Back up each transaction.</strong> Use interrupted-import detection and guarded recovery tools. Recovery stops when unexpected edits need investigation.</li><li><strong>Use the imported data at runtime.</strong> Import in the Editor; the runtime assembly has no UnityEditor dependency.</li></ul><aside class="notice"><strong>Backups are part of the workflow.</strong><p>Transaction backups do not protect against disk failure or the loss of your project and backup folder. Keep independent backups and version control. Committed imports cannot be automatically rolled back.</p></aside></section>
+<section><h2>Verified environment</h2><div class="environment"><div><span>UNITY</span><strong>6000.0.84f1</strong></div><div><span>OPERATING SYSTEM</span><strong>Windows 11 x64</strong></div><div><span>RENDER PIPELINE</span><strong>Built-in</strong></div></div><p>Other Unity versions, macOS, Linux, URP and HDRP have not been verified.</p></section>
+<section><h2>Know the scope</h2><p>The current workflow uses one fixed item schema. It does not support XLSX, Google Sheets, arbitrary class mapping, runtime imports, automatic synchronization, multi-table relationships or automatic ID migration.</p><p>Custom fields, sub-assets and custom serialization are not supported. One Editor process must own the project; concurrent external edits during import are unsupported.</p><p>Some large-import performance targets remain unmet. No instant-import, complete data-loss prevention or broad compatibility claim is made.</p></section>
+<section><h2>Release status</h2><p>The candidate package has been uploaded. Store submission, approval and public release are pending. There is no purchase link until public availability has been confirmed.</p><p>AI assistance was used for code, tests, samples and documentation. Independent human code review and customer validation have not been confirmed.</p><a href="changelog.html">Read the candidate notes →</a></section></div>
+</main>
+<footer class="wrap footer"><span>MapleMaketh <span class="dot">/</span> Tools for game data workflows.</span><a href="mailto:maplemaketh@gmail.com">maplemaketh@gmail.com</a></footer>
+</body>
+</html>
